@@ -1,0 +1,27 @@
+.buttons {
+    width: 200px;
+    margin: 0 auto;
+    display: inline;}
+    
+        .action_btn {
+    width: 200px;
+    margin: 0 auto;
+    display: inline;}
+
+
+    .ul {
+        list-style-type: none;
+        
+    }
+        .li {
+            display: inline;
+        }
+
+
+.row {
+    display: flex;
+}
+          
+.column {
+    flex: 50%;
+}
