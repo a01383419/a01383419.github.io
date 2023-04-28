@@ -1,0 +1,69 @@
+/* Paleta de colores */
+/* FFF8D6 F7E1AE A4D0A4 617A55 */
+
+body {
+  background-color: #FFF8D6;
+  font-family: "Roboto";
+}
+
+h2 {
+  color: #A4D0A4;
+}
+
+.action_btn {
+  width: 200px;
+  margin: 0 auto;
+  display: inline;
+}
+
+.ul {
+  list-style-type: none;
+}
+.li {
+  display: inline;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+.logo {
+  width: 25%;
+}
+
+.navbar {
+  background-color: #F7E1AE;
+  font-family: "Roboto";
+  font-size: large;
+  padding: 0;
+}
+
+.navbar-brand {
+  padding: 0;
+  margin-left: 350px;
+  margin-right: 350px;
+}
+
+.perfil-img {
+  width: 12%;
+  padding: 5px;
+}
+
+.btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary:visited {
+  color: #617A55;
+  border-color: #617A55;
+  font-weight: 600;
+}
+
+.btn-outline-primary:hover {
+  background-color: #ffe29e;
+  border-color: #617A55;
+}
+
+.form {
+  margin-top: 50px;
+}
