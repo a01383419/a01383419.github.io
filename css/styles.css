@@ -10,29 +10,8 @@ h2 {
   color: #A4D0A4;
 }
 
-.action_btn {
-  width: 200px;
-  margin: 0 auto;
-  display: inline;
-}
-
-.ul {
-  list-style-type: none;
-}
-.li {
-  display: inline;
-}
-
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 50%;
-}
-
 .logo {
-  width: 25%;
+  width: 150px;
 }
 
 .navbar {
@@ -44,12 +23,12 @@ h2 {
 
 .navbar-brand {
   padding: 0;
-  margin-left: 350px;
-  margin-right: 350px;
+  margin-left: 800px;
+  margin-right: auto;
 }
 
 .perfil-img {
-  width: 12%;
+  width: 50px;
   padding: 5px;
 }
 
@@ -66,4 +45,8 @@ h2 {
 
 .form {
   margin-top: 50px;
+}
+
+#healthy-food{
+  float: right;
 }
