@@ -1,12 +1,51 @@
 /* Paleta de colores */
 /* FFF8D6 F7E1AE A4D0A4 617A55 */
 
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li, a, button, header, main, footer {
+  font-family: "Roboto";
+  font-size: large;
+  text-decoration: none;
+  color: black;
+}
+
 body {
   background-color: #FFF8D6;
-  font-family: "Roboto";
+}
+
+header, main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15%;
+}
+
+h1 {
+  color: black;
+  font-size: 4rem;
+  font-weight: 900;
 }
 
 h2 {
+  color: #617A55;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.nav-links, li{
+  display: inline-block;
+  padding: 20px;
+}
+
+a:hover{
   color: #A4D0A4;
 }
 
@@ -14,33 +53,37 @@ h2 {
   width: 150px;
 }
 
-.navbar {
-  background-color: #F7E1AE;
-  font-family: "Roboto";
-  font-size: large;
-  padding: 0;
+.btn {
+  background-color: white;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  border-width: 1px;
+  cursor: pointer;
+  height: 35px;
+  margin: 5px;
+  padding: 0 25px;
+  position: relative;
+  width: 100%;
 }
 
-.navbar-brand {
-  padding: 0;
-  margin-left: 800px;
-  margin-right: auto;
+.btn-large {
+  background-color: #5dc72c;
+  width: 120%;
+  height: 70px;
+  font-size: 1.4rem;
+  border-width: 0;
+  border-radius: 20px;
+  margin-left: -3px;
 }
 
-.perfil-img {
-  width: 50px;
-  padding: 5px;
+.btn:hover {
+  background-color: #A4D0A4;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
 }
 
-.btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary:visited {
-  color: #617A55;
-  border-color: #617A55;
-  font-weight: 600;
-}
-
-.btn-outline-primary:hover {
-  background-color: #ffe29e;
-  border-color: #617A55;
+.btn-large:hover {
+  background-color: rgb(45, 167, 45);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
 }
 
 .form {
@@ -48,5 +91,8 @@ h2 {
 }
 
 #healthy-food{
+  width: 50%;
   float: right;
+  margin: 5% 10%;
+  border-radius: 20px;
 }
