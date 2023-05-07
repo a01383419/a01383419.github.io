@@ -12,7 +12,6 @@
 
 li, a, button, header, main, footer {
   font-family: "Roboto";
-  font-size: large;
   text-decoration: none;
   color: black;
 }
@@ -29,20 +28,29 @@ header, main{
 }
 
 h1 {
+  font-family: "Roboto";
   color: black;
-  font-size: 4rem;
+  font-size: 4vw;
   font-weight: 900;
 }
 
 h2 {
+  font-family: "Roboto";
   color: #617A55;
-  font-size: 1.7rem;
+  font-size: 1.5vw;
+  font-weight: 300;
+}
+
+h3 {
+  font-family: "Roboto";
+  color: black;
+  font-size: 1.5vw;
   font-weight: 300;
 }
 
 .nav-links, li{
   display: inline-block;
-  padding: 20px;
+  padding: 1vw;
 }
 
 a:hover{
@@ -50,27 +58,27 @@ a:hover{
 }
 
 .logo {
-  width: 150px;
+  width: 180px;
 }
 
 .btn {
   background-color: white;
-  backface-visibility: hidden;
+  width: 120px;
+  height: 40px;
   border-radius: 15px;
   border-width: 1px;
   cursor: pointer;
-  height: 35px;
-  margin: 5px;
-  padding: 0 25px;
-  position: relative;
-  width: 100%;
+}
+
+.nav-links, .btn {
+  font-size: 1vw;
 }
 
 .btn-large {
   background-color: #5dc72c;
-  width: 120%;
-  height: 70px;
-  font-size: 1.4rem;
+  width: 20vw;
+  height: 4vw;
+  font-size: 1.2vw;
   border-width: 0;
   border-radius: 20px;
   margin-left: -3px;
@@ -88,11 +96,78 @@ a:hover{
 
 .form {
   margin-top: 50px;
+  justify-content: center;
 }
 
 #healthy-food{
-  width: 50%;
+  width: 45vw;
   float: right;
   margin: 5% 10%;
   border-radius: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2%;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2%;
+  }
+
+  .main-text2, .main-text3 {
+    display: flex;
+    align-items: center;
+    padding: 10px 10%;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 6vw;
+    font-weight: 900;
+  }
+
+  h2 {
+    font-size: 2.5vw;
+    font-weight: 300;
+  }
+
+  #healthy-food{
+    width: 80vw;
+    float: right;
+    margin: 5% 10%;
+    border-radius: 20px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+  
+  .btn {
+    border-width: .0;
+    background-color: #A4D0A4;
+    width: 60px;
+    height: 30px;
+  }
+
+  .nav-links, .btn {
+    font-size: 1.8vw;
+  }
+
+  .btn-large {
+    border-width: 0;
+    background-color: #5dc72c;
+    width: 40vw;
+    height: 6vw;
+    font-size: 2vw;
+  }
+  
 }
